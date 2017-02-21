@@ -1,6 +1,6 @@
 ###Supported tags and respective Dockerfile links
-* 5.2, latest (5.2/Dockerfile)
-* 2.3.1 (2.3.1/Dockerfile)
+* 5.2, 5.2.1, latest ([5.2/Dockerfile](https://github.com/stakater/dockerfile-elasticsearch/blob/master/5.2/Dockerfile))
+* 2.3.1 ([2.3.1/Dockerfile](https://github.com/stakater/dockerfile-elasticsearch/blob/master/2.3.1/Dockerfile))
 
 For more information Please look at the README files with the dockerfiles.
 
