@@ -1,0 +1,8 @@
+# network.host set to 0.0.0.0 by default so that port 9300 is bound to 
+# docker container's IP and can be accessed when mapped outside
+network.host: 0.0.0.0
+http.host: 0.0.0.0
+
+# Uncomment the following lines for a production cluster deployment
+transport.host: 0.0.0.0
+#discovery.zen.minimum_master_nodes: 1
