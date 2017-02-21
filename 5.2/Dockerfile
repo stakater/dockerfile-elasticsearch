@@ -13,8 +13,8 @@ ENV PATH /usr/share/elasticsearch/bin:$PATH \
     ES_JAVA_OPTS "-Xms1g -Xmx1g"
 	
 ARG ELASTICSEARCH_VERSION=5.2.1
-ENV ELASTICSEARCH_TARBALL="https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.2.1.tar.gz" \
-	ELASTICSEARCH_TARBALL_ASC="https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.2.1.tar.gz.asc" \
+ENV ELASTICSEARCH_TARBALL="https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz" \
+	ELASTICSEARCH_TARBALL_ASC="https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz.asc" \
 	ELASTICSEARCH_TARBALL_SHA1="93bae92937075fed18ac4a4dd57798aca792af03"
 
 RUN set -ex; \
