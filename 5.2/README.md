@@ -11,7 +11,7 @@ Run the latest container with:
 
 
 ###NOTE: 
-If elasticsearch container fails to start due to VM memmory error, run the following command on the host machine: 
+The elasticsearch docker images currently doesn't run on a machine with RAM below `4096 Mb`. If elasticsearch container fails to start due to VM memmory error, run the following command on the host machine: 
 ```
 sysctl -w vm.max_map_count=262144
 ``` 
