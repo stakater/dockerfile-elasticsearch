@@ -7,7 +7,6 @@ For more information Please look at the version specific README files with the d
 ## What is Elasticsearch?
 
 Elasticsearch is a search server based on Lucene. It provides a distributed, multitenant-capable full-text search engine with a RESTful web interface and schema-free JSON documents.
-=======
 
 Run the latest container with:
 
