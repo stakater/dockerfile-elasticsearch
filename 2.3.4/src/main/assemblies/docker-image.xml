@@ -1,0 +1,26 @@
+<assembly xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+          xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2
+                        http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+
+  <fileSets>
+    <fileSet>
+      <outputDirectory>/config/</outputDirectory>
+      <includes>
+        <include>elasticsearch.yml</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+
+  <dependencySets>
+    <dependencySet>
+      <outputDirectory>/plugins/cloud-kubernetes</outputDirectory>
+      <useProjectAttachments>true</useProjectAttachments>
+      <includes>
+        <include>io.fabric8:elasticsearch-cloud-kubernetes:zip</include>
+      </includes>
+      <unpack>true</unpack>
+    </dependencySet>
+  </dependencySets>
+
+</assembly>
