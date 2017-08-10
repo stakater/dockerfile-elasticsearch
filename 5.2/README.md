@@ -63,20 +63,20 @@ e.g.
 
 `docker run -d -p 9200:9200 -p 9300:9300 stakater/elasticsearch elasticsearch`
 
+### Basic elastic search queries
 
-Basic elastic search queries
-
-http://192.168.99.100:9200/_search?pretty
-http://192.168.99.100:9200/_template/
-
+```
 http://{ELASTIC_SEARCH_HOST}:9200/_search?pretty
 http://{ELASTIC_SEARCH_HOST}:9200/_template/
+```
 
 In other words, in order to search for our movies we can make POST requests to either of the following URLs:
 
+```
 http://localhost:9200/_search - Search across all indexes and all types.
 http://localhost:9200/movies/_search - Search across all types in the movies index.
 http://localhost:9200/movies/movie/_search - Search explicitly for documents of type movie within the movies index.
+```
 
 ```
 manage_template => false
