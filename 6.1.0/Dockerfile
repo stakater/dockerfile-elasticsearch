@@ -72,7 +72,7 @@ EXPOSE 9200 9300
 # So that users are able to provice command line arguments to elastic search
 ENV COMMAND "elasticsearch"
 
-# Make daemon service dir for logstash and place file
+# Make daemon service dir for elasticsearch and place file
 # It will be started and maintained by the base image
 RUN mkdir -p /etc/service/elasticsearch
 ADD start.sh /etc/service/elasticsearch/run

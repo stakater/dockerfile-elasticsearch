@@ -5,7 +5,6 @@ set -e
 IFS=' ' read -r -a CMD_ARRAY <<< "$COMMAND"
 
 # explicitly setting positional parameters ($@) to CMD_ARRAY
-# Add logstash as command if needed i.e. when 
 # Add elasticsearch as command if needed
 if [ "${CMD_ARRAY[0]:0:1}" = '-' ]; then
 	set -- elasticsearch "${CMD_ARRAY[@]}"
