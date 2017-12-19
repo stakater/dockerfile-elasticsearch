@@ -1,10 +1,6 @@
 FROM  stakater/java8-alpine:1.8.0_152
 LABEL authors="Stakater"
 
-# grab su-exec for easy step-down from root
-# and bash for "bin/elasticsearch" among others
-#RUN apk add --no-cache 'su-exec>=0.2'
-
 ARG ELASTICSEARCH_VERSION=6.1.0
 ARG ELASTICSEARCH_HOME=/usr/share/elasticsearch
 ARG UID=1000
