@@ -1,4 +1,5 @@
-FROM  stakater/java8-alpine:1.8.0_152
+FROM quay.io/pires/docker-jre:8u151_cpufix
+#FROM  stakater/java8-alpine:1.8.0_152 ## fails to start in k8s!
 
 MAINTAINER Stakater Team <hello@stakater.com>
 
