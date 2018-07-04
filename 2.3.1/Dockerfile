@@ -43,6 +43,9 @@ RUN set -ex \
 		chown -R elasticsearch:elasticsearch "$path"; \
 	done
 
+# Required for ES Curator
+RUN bin/plugin install -b cloud-aws
+
 COPY config ./config
 
 VOLUME /usr/share/elasticsearch/data
